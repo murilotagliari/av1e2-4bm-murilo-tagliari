@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar | CryptoTrack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">₿ CryptoTrack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="criptomoedas.html">Criptomoedas</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="compra.html">Comprar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carteira.html">Minha carteira</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container conteudo">
+        <p class="destaque">LOJA DE CRIPTOMOEDAS</p>
+        <h1>Comprar criptomoedas</h1>
+        <p class="texto-secundario">Escolha uma moeda, informe quanto deseja investir em reais e veja a quantidade recebida.</p>
+
+        <div class="row g-4 mt-2">
+            <div class="col-lg-5">
+                <div class="formulario">
+                    <h3>Realizar compra</h3>
+                    <form id="formularioCompra">
+                        <label for="moedaCompra" class="form-label">Criptomoeda</label>
+                        <select id="moedaCompra" class="form-select mb-3" required>
+                            <option value="">Selecione uma moeda</option>
+                            <option value="Bitcoin">Bitcoin - R$ 350.000,00</option>
+                            <option value="Ethereum">Ethereum - R$ 18.500,00</option>
+                            <option value="Solana">Dogecoin - R$ 0,38</option>
+                            <option value="Cardano">Cardano - R$ 2,40</option>
+                            <option value="XRP">XRP - R$ 12,00</option>
+                        </select>
+
+                        <label for="valorReais" class="form-label">Valor em reais</label>
+                        <input type="number" id="valorReais" class="form-control mb-3" min="0.01" step="0.01" placeholder="Ex.: 100,00" required>
+
+                        <div class="preco-compra mb-3">
+                            <span>Preço por unidade</span>
+                            <strong id="precoUnidade">Selecione uma moeda</strong>
+                        </div>
+                        <div class="preco-compra mb-3">
+                            <span>Quantidade de criptomoedas que você receberá</span>
+                            <strong id="quantidadeRecebida">0</strong>
+                        </div>
+                        <div class="preco-compra mb-3">
+                            <span>Valor da compra</span>
+                            <strong id="valorCompra">R$ 0,00</strong>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Comprar moeda</button>
+                    </form>
+                    <p id="mensagemCompra" class="mt-3 mb-0" aria-live="polite"></p>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="tabela">
+                    <h3>Preços das criptomoedas</h3>
+                    <div class="preco-lista">
+                        <div><span>₿ Bitcoin (BTC)</span><strong>R$ 350.000,00</strong></div>
+                        <div><span>◆ Ethereum (ETH)</span><strong>R$ 18.500,00</strong></div>
+                        <div><span>Ð Dogecoin (DOGE)</span><strong>R$ 0,38</strong></div>
+                        <div><span>₳ Cardano (ADA)</span><strong>R$ 2,40</strong></div>
+                        <div><span>✕ XRP</span><strong>R$ 12,00</strong></div>
+                    </div>
+                    <p class="texto-secundario small mt-3 mb-0">Preços fictícios para a demonstração do projeto. Não representam cotações em tempo real.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer><div class="container">CryptoTrack - Desenvolvido por Murilo Tagliari</div></footer>
+    <script src="JS/compra.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

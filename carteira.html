@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha carteira | CryptoTrack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">₿ CryptoTrack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="criptomoedas.html">Criptomoedas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="compra.html">Comprar</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="carteira.html">Minha carteira</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container conteudo">
+        <p class="destaque">SEUS ATIVOS</p>
+        <h1>Minha carteira</h1>
+        <p class="texto-secundario">Aqui aparecem somente as criptomoedas que você comprou na página Comprar.</p>
+
+        <div class="resumo mt-4 mb-4">
+            <p class="mb-1">Total gasto em compras</p>
+            <h2 id="totalCarteira">R$ 0,00</h2>
+        </div>
+
+        <div class="tabela">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+                <h3 class="mb-0">Moedas compradas</h3>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="compra.html" class="btn btn-primary">Comprar mais moedas</a>
+                    <button type="button" class="btn btn-outline-danger" onclick="limparCarteira()">Limpar carteira</button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-dark table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>Criptomoeda</th>
+                            <th>Quantidade</th>
+                            <th>Preço unitário</th>
+                            <th>Total pago</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaCarteira">
+                        <tr><td colspan="4" class="text-center">Você ainda não comprou nenhuma criptomoeda.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="texto-secundario small mb-0">As compras ficam salvas neste navegador. Use “Limpar carteira” para apagar todas.</p>
+        </div>
+    </main>
+
+    <footer><div class="container">CryptoTrack - Desenvolvido por Murilo Tagliari</div></footer>
+    <script src="JS/carteira.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

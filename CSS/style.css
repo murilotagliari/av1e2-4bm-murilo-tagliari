@@ -1,0 +1,211 @@
+body {
+    background-color: #0d1425;
+    color: #f5f7ff;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #080e1b;
+    padding: 15px 0;
+}
+.navbar-brand {
+    font-size: 23px;
+    font-weight: bold;
+}
+.nav-link {
+    color: #d1d8e8;
+}
+.nav-link:hover, .nav-link.active {
+    color: #7f9cff !important;
+}
+.inicio {
+    background: linear-gradient(120deg, #17264a, #0d1425);
+    padding: 90px 0;
+}
+.inicio h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+.inicio h1 span, .destaque {
+    color: #7f9cff;
+}
+.inicio .lead, .texto-secundario {
+    color: #b5bfd3;
+}
+.simbolo {
+    width: 230px;
+    height: 230px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #f7931a;
+    color: white;
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 220px;
+    box-shadow: 0 0 45px rgba(247, 147, 26, 0.25);
+}
+.btn-primary {
+    background-color: #5879ed;
+    border-color: #5879ed;
+}
+.btn-primary:hover {
+    background-color: #4263d5;
+}
+.conteudo {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    min-height: 75vh;
+}
+.conteudo h1, .conteudo h2 {
+    font-weight: bold;
+}
+.card-padrao, .moeda-card, .formulario, .resumo, .tabela, .sobre-box {
+    background-color: #172239;
+    border: 1px solid #293957;
+    border-radius: 14px;
+    padding: 25px;
+    height: 100%;
+}
+.card-padrao p, .moeda-card p, .sobre-box p {
+    color: #b5bfd3;
+}
+.card-padrao a {
+    color: #8ba5ff;
+    text-decoration: none;
+}
+.card-padrao a:hover {
+    text-decoration: underline;
+}
+.icone {
+    color: #7f9cff;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+.moeda {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.bitcoin { background: #f7931a; }
+.ethereum { background: #627eea; }
+.dogecoin { background: #c2a633; }
+.cardano { background: #2866d8; }
+.xrp { background: #34445f; }
+.moeda-card h3 {
+    font-size: 22px;
+}
+.moeda-card h3 small {
+    color: #9eabc4;
+    font-size: 13px;
+}
+.moeda-card h4 {
+    margin-top: 20px;
+    color: #7f9cff;
+    font-weight: bold;
+}
+.formulario h3, .tabela h3 {
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+.form-control, .form-select {
+    background-color: #0d1425;
+    color: white;
+    border-color: #34445f;
+}
+.form-control:focus, .form-select:focus {
+    background-color: #0d1425;
+    color: white;
+    border-color: #7f9cff;
+    box-shadow: none;
+}
+.form-select option {
+    background-color: #172239;
+}
+.resumo h2 {
+    color: #7f9cff;
+    font-weight: bold;
+}
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: white;
+}
+.table th {
+    color: #aebbd3;
+}
+#mensagem {
+    min-height: 24px;
+}
+.sucesso { color: #45d6a1; }
+.erro { color: #ff7d8b; }
+.botao-remover {
+    background-color: #8e3545;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+.botao-remover:hover {
+    background-color: #b34355;
+}
+.aviso {
+    background-color: #253452;
+    border-left: 4px solid #7f9cff;
+    padding: 15px;
+    border-radius: 5px;
+}
+footer {
+    background-color: #080e1b;
+    color: #aebbd3;
+    padding: 22px 0;
+    text-align: center;
+}
+@media (max-width: 576px) {
+    .inicio {
+        padding: 60px 0;
+    }
+    .inicio h1 {
+        font-size: 36px;
+    }
+    .simbolo {
+        width: 170px;
+        height: 170px;
+        font-size: 110px;
+        line-height: 165px;
+    }
+}
+
+.preco-compra {
+    background-color: #0d1425;
+    border: 1px solid #34445f;
+    border-radius: 8px;
+    padding: 12px;
+}
+.preco-compra span {
+    display: block;
+    color: #aebbd3;
+    font-size: 14px;
+}
+.preco-compra strong {
+    display: block;
+    color: #7f9cff;
+    font-size: 19px;
+    margin-top: 4px;
+}
+.preco-lista div {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #34445f;
+}
+.preco-lista div:last-child {
+    border-bottom: 0;
+}
+.preco-lista strong {
+    color: #7f9cff;
+}
